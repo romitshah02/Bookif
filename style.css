@@ -1,0 +1,94 @@
+.booklist{
+    padding: 40px 50px;
+}
+
+body{
+    background-image: url("./bg.jpg");
+}
+
+.books{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    padding: 5px;
+}
+
+.single-book {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.single-book:hover {
+    transform: scale(1.05);
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 5px;
+    color: white;
+}
+
+select{
+    border-radius: 5px;
+    width: 100px    ;
+    height: 40px;
+    font-weight: 600;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+.book-image {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.book-info {
+    text-align: center;
+
+}
+
+.book-rank{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    top: 0;
+    font-weight: 800;
+    background-color: orange;
+    width: fit-content;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.book-title {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.book-author {
+    color: #555;
+}
+
+.book-streak{
+    font-size: 0.9em;
+}
